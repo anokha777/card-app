@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Card App</title>
+</head>
+<body>
+    <div class="container-card">
+        <div class="box">
+            <div class="imgBox">
+                <img src="./images/Medical-van-and-team-2-500x362.jpg" alt="">
+            </div>
+            <div class="contentBx">
+                <h2>Title Box Hover Effect</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, 
+                    cupiditate nobis! Exercitationem at magnam earum consectetur libero 
+                    eius quasi quidem explicabo natus dolores? Cumque ducimus, expedita 
+                    molestias itaque officia dicta!
+                </p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="imgBox">
+                <img src="./images/Musahar-community-500x362.jpg" alt="">
+            </div>
+            <div class="contentBx">
+                <h2>Title Box Hover Effect</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, 
+                    cupiditate nobis! Exercitationem at magnam earum consectetur libero 
+                    eius quasi quidem explicabo natus dolores? Cumque ducimus, expedita 
+                    molestias itaque officia dicta!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".box"), {
+            max: 25,
+            speed: 400
+        });
+        
+        //It also supports NodeList
+        // VanillaTilt.init(document.querySelectorAll(".your-element"));
+    </script>
+</body>
+</html>
